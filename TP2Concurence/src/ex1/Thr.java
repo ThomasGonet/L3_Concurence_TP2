@@ -38,10 +38,10 @@ public class Thr {
 			t2.start();
 			t3.start();
 	}
-	
-	
-	
-	
+
+
+
+
 	public synchronized void printA(){
 
 		System.out.println("A");
@@ -75,9 +75,9 @@ public class Thr {
 			}
 		}
 	}
-	
-	
-	
+
+
+
 
 	public synchronized void printB(){
 		try {
@@ -92,9 +92,9 @@ public class Thr {
 		notifyAll();
 	}
 
-	
-	
-	
+
+
+
 	public synchronized void printC(){
 		try {
 			wait();
@@ -108,6 +108,6 @@ public class Thr {
 		notifyAll();
 	}
 
-	
-	
+
+
 }
